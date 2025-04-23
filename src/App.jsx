@@ -1,13 +1,16 @@
 import './App.css'
-import PostPage from './components/PostPage'
+import PostPage from './components/PostPage';
+import { PostsProvider } from './context/PostContext';
 
 function App() {
 
 
   return (
-    <>
-      <PostPage />
-    </>
+    <PostsProvider>
+      <>
+        <PostPage />
+      </>
+    </PostsProvider>
   )
 }
 
